@@ -1,10 +1,17 @@
-import "./styles.css";
+import {useState} from "react";
 
-export default function App() {
+
+function App() {
+  const [data, setData] = useState(0)
+  function updateData(){
+    setData(data+1*5)
+  }
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div className= "App">
+      <h1>{data}</h1>
+      {/* <h2</button onClick{updateData}>>{data}</h2> */}
+      <button onClick= {updateData}>Rahul</button>
     </div>
   );
 }
+export default App;

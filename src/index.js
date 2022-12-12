@@ -1,13 +1,17 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom";
 
 import App from "./App";
+import Student from "./Student";
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-
-root.render(
-  <StrictMode>
+ReactDOM.render(
+  <>
     <App />
-  </StrictMode>
+    <Student name={"Anuradha"} />
+    <Student name={"Radha"} />
+    <Student name={"Paswan"} />
+    <Student name={"Pandit"} />
+    <Student name={"RahulAnuradha"} />
+  </>,
+  document.getElementById("root")
 );
