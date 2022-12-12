@@ -1,7 +1,8 @@
 function Student(props) {
   return (
     <>
-      <h1>Rahul {props.name}</h1>
+      <h1>{props.name}</h1>
+      <h1>{props.email}</h1>
     </>
   );
 }
